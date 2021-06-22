@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../../../components/Button/Button";
 import { useWalletModal } from "../../WalletModal";
 import { Login } from "../../WalletModal/types";
+import styled from "styled-components";
 
 interface Props {
   account?: string;
@@ -15,7 +16,7 @@ const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
   return (
     <div>
       {account ? (
-        <Button
+        <StyledConnectButton
           scale="sm"
           variant="tertiary"
           onClick={() => {
@@ -23,16 +24,16 @@ const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
           }}
         >
           {accountEllipsis}
-        </Button>
+        </StyledConnectButton>
       ) : (
-        <Button
+        <StyledConnectButton
           scale="sm"
           onClick={() => {
             onPresentConnectModal();
           }}
         >
           Connect
-        </Button>
+        </StyledConnectButton>
       )}
     </div>
   );
@@ -45,3 +46,11 @@ export default React.memo(
     prevProps.login === nextProps.login &&
     prevProps.logout === nextProps.logout
 );
+
+
+const StyledConnectButton = styled(Button)`
+  background-color: unset;
+  border: 1.5px solid #7DF1FE;
+  box-sizing: border-box;
+  border-radius: 12px;
+`
