@@ -14,8 +14,8 @@ interface Props {
 }
 
 const blink = keyframes`
-  0%,  100% { transform: scaleY(1); } 
-  50% { transform:  scaleY(0.1); } 
+  0%,  100% { transform: scaleY(1); }
+  50% { transform:  scaleY(0.1); }
 `;
 
 const StyledLink = styled(Link)`
@@ -46,13 +46,14 @@ const StyledLink = styled(Link)`
       animation-iteration-count: 1;
     }
   }
-`;
+`
+;
 
 const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
-      <LogoIcon className="mobile-icon" />
+      {/* <LogoIcon className="mobile-icon" /> */}
       <LogoWithText className="desktop-icon" isDark={isDark} />
     </>
   );
