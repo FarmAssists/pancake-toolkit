@@ -4,7 +4,7 @@ import { SvgProps } from "../../../components/Svg/types";
 
 const Icon: React.FC<SvgProps> = (props) => {
   return (
-    <Svg viewBox="0 0 24 24" {...props}>
+    <Svg viewBox="-2 0 20 24" {...props}>
       <title>menu_poolsIcon</title>
   <g>
     <path d="M19.76,9.29L15.6,5.12A0.41,0.41,0,0,0,15.3,5H6.57A1.67,1.67,0,0,0,4.91,6.67V23.33A1.67,1.67,0,0,0,6.57,25H18.21a1.67,1.67,0,0,0,1.66-1.67V9.58A0.42,0.42,0,0,0,19.76,9.29Zm-4-2.87,2.74,2.74H16.55a0.83,0.83,0,0,1-.83-0.83V6.42ZM19,23.33a0.83,0.83,0,0,1-.83.83H6.57a0.83,0.83,0,0,1-.83-0.83V6.67a0.83,0.83,0,0,1,.83-0.83h8.32v2.5A1.67,1.67,0,0,0,16.55,10H19V23.33Z" transform="translate(-4.51 -4.6)" fill="#7df1fe" stroke="#7df1fe" stroke-width="0.8"/>

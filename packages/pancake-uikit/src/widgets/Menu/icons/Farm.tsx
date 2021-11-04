@@ -4,9 +4,9 @@ import { SvgProps } from "../../../components/Svg/types";
 
 const Icon: React.FC<SvgProps> = (props) => {
   return (
-    <Svg viewBox="2 0 22 22" {...props}>
+    <Svg viewBox="2 -16 21 60" {...props}>
       <defs>
-        <mask id="mask" x="0" y="0" width="28" height="28" maskUnits="userSpaceOnUse">
+        <mask id="mask" x="0" y="0" width="100" height="100" maskUnits="userSpaceOnUse">
           <g transform="translate(-2 -2)">
             <g id="path-1-inside-1">
               <path d="M22.51,9.58H18.43V5.5A1.49,1.49,0,0,0,17,4H11.06A1.49,1.49,0,0,0,9.57,5.49V9.57H5.5A1.49,1.49,0,0,0,4,11v5.89a1.49,1.49,0,0,0,1.49,1.49H9.57V22.5A1.49,1.49,0,0,0,11.05,24h5.88a1.49,1.49,0,0,0,1.49-1.49V18.43H22.5A1.49,1.49,0,0,0,24,16.95h0V11.07A1.49,1.49,0,0,0,22.51,9.58ZM22,16.43H17.43a1,1,0,0,0-1,1V22H11.57V17.43a1,1,0,0,0-1-1H6V11.58h4.57a1,1,0,0,0,1-1V6h4.85v4.57a1,1,0,0,0,1,1H22v4.86Z" fill="#fff"/></g></g></mask></defs>
